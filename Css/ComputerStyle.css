@@ -1,0 +1,532 @@
+.logo {
+
+	position: absolute;
+	margin-top: 1rem;
+	margin-left: 2rem;
+	max-width:8rem;
+	                        height:auto;
+													z-index: 2;
+}
+
+body {
+
+	background-image: url("../Images/back.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size: 130%;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+		background-color: WHITE;
+
+  }
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 0 1rem -2px rgba(0, 0, 0, .2);
+	height: 6rem;
+	max-height: 6rem;
+	position: absolute;
+	width: 100%;
+
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 1);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.header a:hover {
+  background-color: #4FDC30;
+  color: black;
+}
+
+
+.header a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.header-right {
+  float: right;
+	line-height: 25px;
+	border-radius: 4px;
+	  background-color: white;
+}
+.header-center {
+  float: left;
+	line-height: 25px;
+	border-radius: 4px;
+	margin-left: 15%;
+	background-color: white;
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+.container {
+    margin: auto;
+    margin-top: 2%;
+    width: 50rem;
+		padding: 8rem;
+    height: auto;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    text-align:center;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(300px);
+    margin: -20px;
+}
+
+.product-container {
+    margin: auto;
+    margin-top: 2%;
+    width: 95%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    text-align:center;
+		display: grid;
+	  grid-template-columns: auto auto auto;
+	  object-fit: container:
+}
+.product-box {
+    width: 95%;
+    height: 30rem;
+    position: relative;
+		margin-top: 4%;
+    z-index: 1;
+    overflow: hidden;
+    text-align:center;
+		display: block;
+		background-color: rgba(255, 255, 255, .6);
+}
+
+.product-image-box{
+	width: 80%;
+	height: 12rem;
+
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+	text-align:center;
+	background-color: rgba(250, 250, 250, .8);
+
+}
+.lateral-box{
+	width: 25%;
+	height: auto;
+
+	margin-right: 4rem;
+	position: relative;
+	overflow: hidden;
+	text-align:center;
+	background-color: rgba(250, 250, 250, .8);
+
+}
+.product-box:hover { background-color: rgba(252, 252, 252, 1); }
+
+table, th, td {
+  border-spacing: 0;
+  border-collapse: collapse;
+	border: solid 1px;
+	border-color: #4CAF50;
+	background-color: rgba(255, 255, 255, 0.4)
+}
+.vertical-box {
+    width: auto;
+    height: auto;
+    position: relative;
+
+    z-index: 1;
+    overflow: hidden;
+    text-align:center;
+		display: block;
+
+}
+tr:hover {background-color: #f5f5f5;}
+.invisible{
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10%;
+  min-height: 15px;
+  background-color: rgba(255, 255, 255, 0.0);
+  display: flex;
+}
+
+.invisible-grid{
+  margin: auto;
+    position:fixed;
+  width: 30rem;
+  padding: 10px;
+  margin-top: 10%;
+  min-height: 15px;
+  background-color: rgba(255, 255, 255, 0.0);
+  display: inline-grid;
+}
+
+.div-back {
+  margin: auto;
+  width: 90%;
+
+  height: auto;
+  margin-top: 0px;
+
+    border-left: solid 0.5px;
+		border-right: solid 0.5px;
+
+    border-color: #4CAF50;
+	position: relative;
+	padding: 3px;
+
+}
+
+.div-invisible {
+  width: auto;
+
+  display: inline-block
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+h2 {
+	font-family: "Lucida Console", Lucida, monospace;
+  font-size: 20px;
+color: rgba(0, 0, 0, 0.6);
+}
+h1 {
+	font-family: "Lucida Console", Lucida, monospace;
+  font-size: 27px;
+color: rgba(0, 0, 0, 0.7);
+}
+p {
+  font-family: "Lucida Console", Lucida, monospace;
+  font-size: 23px;
+  margin: 4px;
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+p1 {
+  font-family: "Lucida Console", Lucida, monospace;
+  font-size: 30px;
+  margin: 4px;
+  color: RED;
+
+}
+
+.insert-text {
+  min-width: 10px;
+  max-width: 180px;
+  width: 180px;
+  min-height: 30px;
+  max-height: 30px;
+
+  border-radius: 5px;
+  position: relative;
+  margin-top: 3%;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, 1);
+  background: inherit;
+  z-index: 3;
+  margin: auto
+}
+
+.insert-text:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+
+}
+
+.insert-in-image {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  background: inherit;
+  z-index: 3;
+    display: inline-grid;
+}
+
+.insert-in-image:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+	margin-top: 4px;
+}
+
+/* Hide the images by default */
+.slideImmagini {
+  display: none;
+	    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+			width: 100%;
+			   overflow: hidden;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+	  font-family: "Lucida Console", Lucida, monospace;
+    color: rgba(0, 0, 0, 0.8);
+  font-size: 21px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #4CAF50;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Customize the label (the container) */
+
+
+.checkC {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.checkC input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkC:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkC input:checked ~ .checkmark {
+  background-color: #4CAF50;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkC input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkC .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
